@@ -9,7 +9,7 @@ Mongodb ==> non-sql Database
 npm ==> package management tool (backend)  
 
 ### Frontend
-Angular ==> Web App framework 
-bower ==> package management tool (frontend)  
+Angular ==> Web App framework   
+bower ==> package management tool (frontend)   
 
 
