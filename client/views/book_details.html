@@ -1,0 +1,42 @@
+<a ng-init="getBook()" class="mb-3 btn btn-outline-primary" href="#!books"
+  >Go Back</a
+>
+<div class="card-columns">
+  <div class="card">
+    <img
+      class="card-img-top"
+      ng-src="{{book.image_url}}"
+      alt="Card image cap"
+    />
+  </div>
+  <div class="card">
+    <div class="card-header">
+      <h4 class="my-0 font-weight-normal">Details</h4>
+    </div>
+    <div class="card-body">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Title: {{book.title}}</li>
+        <li class="list-group-item">Author: {{book.author}}</li>
+        <li class="list-group-item">Genre: {{book.genre}}</li>
+        <li class="list-group-item">Publisher: {{book.publisher}}</li>
+        <li class="list-group-item">Pages: {{book.pages}}</li>
+        <li class="list-group-item">{{book.description}}</li>
+      </ul>
+      <a href="{{book.buy_url}}" class="btn btn-primary" target="_blank"
+        >Buy on Amazon</a
+      >
+    </div>
+    <hr />
+    <div class="text-right mr-3 mb-3">
+      <a class="btn btn-outline-primary" ng-href="#!books/edit/{{book._id}}"
+        >Edit</a
+      >
+      <a
+        class="ml-3 btn btn-outline-primary btn-danger"
+        href="#"
+        ng-click="removeBook(book._id)"
+        >Delete</a
+      >
+    </div>
+  </div>
+</div>
